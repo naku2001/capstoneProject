@@ -9,5 +9,4 @@ PyYAML  # for handling YAML files
 pdfminer  
 pdf2image
 Pillow  # PIL fork
-base64  # Used for file encoding
 
