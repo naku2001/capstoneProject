@@ -9,7 +9,7 @@ import yaml
 from yaml.loader import SafeLoader
 import google.generativeai as genai
 import os
-from streamlit_back_camera_input import back_camera_input
+
 
 
 
