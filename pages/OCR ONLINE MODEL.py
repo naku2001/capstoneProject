@@ -15,7 +15,7 @@ import os
 
 prompt = "extract text from the given image,keep structure of the text,if you identify tabular data draw a dataframe for the data"
 
-fetcheed_api_key = st.secrets["API_Key="]
+fetcheed_api_key = st.secrets["API_Key"]
 genai.configure(api_key = fetcheed_api_key)
 
 model = genai.GenerativeModel('gemini-pro-vision')
