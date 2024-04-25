@@ -9,4 +9,5 @@ PyYAML  # for handling YAML files
 pdfminer  
 pdf2image
 Pillow  # PIL fork
+google-generativeai
 
