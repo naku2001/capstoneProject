@@ -69,6 +69,7 @@ with st.sidebar:
     
 
 pdf_file = st.file_uploader("Load your PDF", type=['pdf', 'png', 'jpg'])
+pdf_file = st.camera_input("Take a picture")
 hide="""
 <style>
 footer{
