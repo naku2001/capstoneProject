@@ -3,4 +3,12 @@ streamlit-authenticator==0.1.5
 
 matplotlib==3.7.1
 seaborn == 0.12.2
+pdf2image
+Pillow  # PIL fork
+pytesseract
+streamlit-authenticator
+PyYAML  # for handling YAML files
+google-cloud-aiplatform  # Assuming you're using Google Generative AI
+Pillow  # PIL fork
+pytesseract
 
