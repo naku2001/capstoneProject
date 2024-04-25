@@ -10,5 +10,5 @@ pdfminer
 pdf2image
 Pillow  # PIL fork
 google-generativeai
-streamlit-back-camera-input
+
 
