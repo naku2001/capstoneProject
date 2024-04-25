@@ -8,15 +8,14 @@ import streamlit_authenticator as stauth
 import yaml
 from yaml.loader import SafeLoader
 import google.generativeai as genai
-from dotenv import load_dotenv
 import os
 
 
-load_dotenv(".env")
+
 
 prompt = "extract text from the given image,keep structure of the text,if you identify tabular data draw a dataframe for the data"
 
-fetcheed_api_key = os.getenv("API_KEY")
+fetcheed_api_key = st.secrets["API_KEY"]
 genai.configure(api_key = fetcheed_api_key)
 
 model = genai.GenerativeModel('gemini-pro-vision')
