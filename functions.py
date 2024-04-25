@@ -19,7 +19,7 @@ import os
 # import os
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "marine-access-418412-e586b735cf01.json"
 
-@st.cache_data
+@st.experimental_memo 
 def images_to_txt(path, language):
     images = pdf2image.convert_from_bytes(path)
     all_text = []
@@ -33,7 +33,7 @@ def images_to_txt(path, language):
         all_text.append(text)
     return all_text, len(all_text)
 
-# @st.cache_data   
+@st.experimental_memo    
 # def detect_handwriting(path):
 #     """Detects handwriting in the file."""
 #     client = vision.ImageAnnotatorClient()
@@ -60,7 +60,7 @@ def images_to_txt(path, language):
 
    
 
-@st.cache_data
+@st.experimental_memo 
 def convert_pdf_to_txt_pages(path):
     texts = []
     rsrcmgr = PDFResourceManager()
@@ -89,7 +89,7 @@ def convert_pdf_to_txt_pages(path):
     retstr.close()
     return texts, nbPages
 
-@st.cache_data
+@st.experimental_memo 
 def convert_pdf_to_txt_file(path):
     texts = []
     rsrcmgr = PDFResourceManager()
@@ -111,7 +111,7 @@ def convert_pdf_to_txt_file(path):
     retstr.close()
     return t, nbPages
 
-@st.cache_data
+@st.experimental_memo 
 def save_pages(pages):
   
   files = []
